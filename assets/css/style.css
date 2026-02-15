@@ -299,29 +299,23 @@ ul, ol {
   .nav__burger {
     display: flex;
   }
-
 }
 
 /* ----- Layout spacer ----- */
 
 body {
-  padding-top: 64px;
+  padding-top: 158px;
 }
 
-/* ----- Sticky Brand Bar ----- */
+/* ----- Brand Bar (inside header) ----- */
 
-.brand-bar-sticky {
-  position: sticky;
-  top: 64px;
-  z-index: 100;
-  background: rgba(255, 252, 248, 0.92);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 12px 48px;
+.brand-bar {
+  padding: 10px 48px;
+  border-top: 1px solid rgba(207, 165, 130, 0.3);
   border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
-.brand-bar-sticky__logo {
+.brand-bar__logo {
   width: 150px;
   max-width: 150px;
   height: auto;
@@ -329,12 +323,15 @@ body {
 }
 
 @media (max-width: 767px) {
-  .brand-bar-sticky {
-    top: 52px;
+  body {
+    padding-top: 130px;
+  }
+
+  .brand-bar {
     padding: 10px 24px;
   }
 
-  .brand-bar-sticky__logo {
+  .brand-bar__logo {
     width: 120px;
   }
 }
