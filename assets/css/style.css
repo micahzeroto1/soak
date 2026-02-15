@@ -337,9 +337,12 @@ body {
 }
 
 .hero__pattern-img {
-  width: 25%;
-  height: auto;
-  opacity: 0.6;
+  display: block;
+  max-width: 200px;
+  max-height: 300px;
+  object-fit: contain;
+  margin: auto;
+  opacity: 0.5;
 }
 
 .hero__logo {
