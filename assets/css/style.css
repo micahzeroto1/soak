@@ -204,30 +204,10 @@ ul, ol {
   transform: translateX(-50%);
 }
 
-.nav__dot {
+.nav__dot-video {
   display: block;
-  width: 20px;
+  width: 22px;
   height: auto;
-}
-
-.nav__dot--closed {
-  transition: opacity 0.3s ease;
-}
-
-.nav__dot--open {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nav__center:hover .nav__dot--closed {
-  opacity: 0;
-}
-
-.nav__center:hover .nav__dot--open {
-  opacity: 1;
 }
 
 .nav__burger {
@@ -362,10 +342,9 @@ body {
   overflow: hidden;
 }
 
-.hero__pattern-img {
-  width: 45%;
+.hero__pattern-gif {
+  width: 65%;
   height: auto;
-  opacity: 0.2;
 }
 
 .hero__logo {
@@ -373,6 +352,16 @@ body {
   top: 32px;
   left: 40px;
   width: 200px;
+  z-index: 2;
+}
+
+.hero__drop-video {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: auto;
   z-index: 2;
 }
 
