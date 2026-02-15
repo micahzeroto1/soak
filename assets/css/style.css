@@ -440,7 +440,7 @@ body {
 }
 
 .booking-cta__crest {
-  width: 80px;
+  width: 160px;
   height: auto;
 }
 
@@ -489,7 +489,7 @@ body {
   }
 
   .booking-cta__crest {
-    width: 60px;
+    width: 120px;
   }
 
   .booking-cta__heading {
@@ -817,7 +817,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 28px;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .footer__photo-frame {
@@ -853,7 +853,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  padding-top: 80px;
+  padding-top: 0;
   padding-bottom: 80px;
 }
 
