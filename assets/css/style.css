@@ -823,19 +823,19 @@ body {
 
 /* Editorial photos */
 .footer__photos {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 60px;
+  position: relative;
+  height: 340px;
+  max-width: 500px;
+  margin: 0 auto 60px;
 }
 
 .footer__photo-frame {
   border: 1px solid var(--nude);
   padding: 8px;
   background: var(--marble);
-  width: 500px;
-  height: 350px;
   overflow: hidden;
+  position: absolute;
+  box-shadow: 0 4px 20px rgba(12, 28, 20, 0.06);
 }
 
 .footer__photo-frame img {
@@ -844,15 +844,22 @@ body {
   object-fit: cover;
   object-position: center center;
   display: block;
-  transform: scale(1.5);
 }
 
 .footer__photo-frame--left {
-  transform: translateY(-10px);
+  width: 200px;
+  height: 260px;
+  top: 0;
+  left: 60px;
+  z-index: 1;
 }
 
 .footer__photo-frame--right {
-  transform: translateY(10px);
+  width: 280px;
+  height: 320px;
+  top: 30px;
+  right: 40px;
+  z-index: 2;
 }
 
 /* Crest + wordmark */
@@ -957,13 +964,21 @@ body {
   }
 
   .footer__photos {
-    gap: 20px;
-    margin-bottom: 40px;
+    height: 280px;
+    max-width: 320px;
+    margin: 0 auto 40px;
   }
 
-  .footer__photo-frame {
-    width: 100%;
-    height: 260px;
+  .footer__photo-frame--left {
+    width: 140px;
+    height: 180px;
+    left: 0;
+  }
+
+  .footer__photo-frame--right {
+    width: 190px;
+    height: 220px;
+    right: 0;
   }
 
   .footer__photo-frame--left,
