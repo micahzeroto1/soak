@@ -123,6 +123,12 @@ ul, ol {
   width: 140px;
 }
 
+.section-divider {
+  border: none;
+  border-top: 1px solid rgba(207, 165, 130, 0.3);
+  margin: 0;
+}
+
 .section-padding {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -347,7 +353,7 @@ body {
 
 .hero__drop-video {
   position: absolute;
-  bottom: -75px;
+  bottom: -20px;
   left: 50%;
   transform: translateX(-50%);
   width: 150px;
