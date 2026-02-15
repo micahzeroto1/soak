@@ -204,7 +204,7 @@ ul, ol {
 
 .nav__center-icon {
   display: block;
-  width: 30px;
+  width: 50px;
   height: auto;
 }
 
@@ -1011,7 +1011,7 @@ body {
 .interior-hero--bg {
   height: 65vh;
   background-size: cover;
-  background-position: 50% 40%;
+  background-position: center top;
   background-repeat: no-repeat;
 }
 
