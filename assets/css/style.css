@@ -522,14 +522,14 @@ body {
   display: flex;
   justify-content: center;
   gap: 40px;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 70px 24px 80px;
 }
 
 .card {
-  flex: 1;
-  max-width: 45%;
+  width: 500px;
+  max-width: 500px;
   display: block;
 }
 
@@ -537,18 +537,21 @@ body {
   border: 1px solid var(--nude);
   padding: 10px;
   overflow: hidden;
+  height: 372px;
 }
 
 .card__img {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
+  transform: scale(1.5);
   transition: transform 0.4s ease;
 }
 
 .card:hover .card__img {
-  transform: scale(1.02);
+  transform: scale(1.52);
 }
 
 .card__info {
@@ -599,6 +602,10 @@ body {
   .card {
     max-width: 100%;
     width: 100%;
+  }
+
+  .card__frame {
+    height: 300px;
   }
 }
 
@@ -854,8 +861,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 80px;
+  gap: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .footer__crest {
