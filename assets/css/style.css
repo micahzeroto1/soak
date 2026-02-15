@@ -372,3 +372,73 @@ body {
     font-size: 1rem;
   }
 }
+
+/* ----- Booking CTA ----- */
+
+.booking-cta {
+  background: var(--marble);
+  text-align: center;
+  padding: 90px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.booking-cta__crest {
+  width: 110px;
+  height: auto;
+}
+
+.booking-cta__heading {
+  font-size: 2.25rem;
+  word-spacing: 1em;
+}
+
+.booking-cta__body {
+  max-width: 600px;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  color: var(--sediment);
+}
+
+.booking-cta__link-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.booking-cta__link {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  transition: opacity 0.2s ease;
+}
+
+.booking-cta__link:hover {
+  opacity: 0.6;
+}
+
+.booking-cta__square {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: var(--sediment);
+}
+
+/* ----- Booking CTA mobile ----- */
+
+@media (max-width: 767px) {
+  .booking-cta {
+    padding: 64px 24px;
+    gap: 28px;
+  }
+
+  .booking-cta__crest {
+    width: 80px;
+  }
+
+  .booking-cta__heading {
+    font-size: 1.75rem;
+  }
+}
