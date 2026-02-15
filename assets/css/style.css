@@ -1016,6 +1016,12 @@ body {
   animation: heroFadeIn 0.8s ease;
 }
 
+.interior-hero--bg {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .interior-hero__img {
   position: absolute;
   inset: 0;
