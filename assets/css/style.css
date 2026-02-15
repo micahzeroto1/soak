@@ -191,11 +191,11 @@ ul, ol {
 .nav__link {
   font-size: 0.75rem;
   letter-spacing: 0.12em;
-  transition: opacity 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 .nav__link:hover {
-  opacity: 0.6;
+  color: var(--clay);
 }
 
 .nav__center {
@@ -206,10 +206,28 @@ ul, ol {
 
 .nav__dot {
   display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--sediment);
+  width: 20px;
+  height: auto;
+}
+
+.nav__dot--closed {
+  transition: opacity 0.3s ease;
+}
+
+.nav__dot--open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav__center:hover .nav__dot--closed {
+  opacity: 0;
+}
+
+.nav__center:hover .nav__dot--open {
+  opacity: 1;
 }
 
 .nav__burger {
@@ -273,6 +291,11 @@ ul, ol {
 .nav__overlay-link {
   font-size: 1.25rem;
   letter-spacing: 0.12em;
+  transition: color 0.3s ease;
+}
+
+.nav__overlay-link:hover {
+  color: var(--clay);
 }
 
 /* ----- Mobile (below 768px) ----- */
@@ -303,6 +326,13 @@ body {
   padding-top: 64px;
 }
 
+/* ----- Hero fade-in ----- */
+
+@keyframes heroFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* ----- Hero ----- */
 
 .hero {
@@ -311,6 +341,7 @@ body {
   grid-template-columns: 1fr 1fr;
   height: 85vh;
   min-height: 500px;
+  animation: heroFadeIn 0.8s ease;
 }
 
 .hero__photo {
@@ -467,11 +498,11 @@ body {
 .booking-cta__link {
   font-size: 0.8rem;
   letter-spacing: 0.1em;
-  transition: opacity 0.2s ease;
+  transition: color 0.3s ease;
 }
 
 .booking-cta__link:hover {
-  opacity: 0.6;
+  color: var(--clay);
 }
 
 .booking-cta__square {
@@ -531,11 +562,17 @@ body {
 .card__frame {
   border: 1px solid var(--nude);
   padding: 10px;
+  overflow: hidden;
 }
 
 .card__img {
   width: 100%;
   display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card__img {
+  transform: scale(1.02);
 }
 
 .card__info {
@@ -983,6 +1020,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: heroFadeIn 0.8s ease;
 }
 
 .interior-hero__img {
@@ -1351,6 +1389,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product:hover .product__img img {
+  transform: scale(1.02);
 }
 
 .product__name {
