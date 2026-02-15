@@ -176,7 +176,6 @@ ul, ol {
 }
 
 .nav {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,16 +199,12 @@ ul, ol {
 }
 
 .nav__center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
   line-height: 0;
 }
 
 .nav__center-icon {
   display: block;
-  width: 35px;
+  width: 30px;
   height: auto;
 }
 
@@ -297,10 +292,6 @@ ul, ol {
     display: flex;
   }
 
-  .nav__center {
-    position: static;
-    transform: none;
-  }
 }
 
 /* ----- Layout spacer ----- */
@@ -1020,7 +1011,7 @@ body {
 .interior-hero--bg {
   height: 65vh;
   background-size: cover;
-  background-position: center center;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
 }
 
