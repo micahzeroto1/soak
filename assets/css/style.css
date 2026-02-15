@@ -104,6 +104,60 @@ ul, ol {
   padding: 0;
 }
 
+/* ----- Reusable Patterns ----- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.brand-bar {
+  padding: 20px 48px;
+  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
+}
+
+.brand-bar__logo {
+  width: 140px;
+}
+
+.section-padding {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.frame-border {
+  border: 1px solid var(--nude);
+  padding: 10px;
+  background: var(--marble);
+}
+
+.frame-border img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .brand-bar {
+    padding: 16px 24px;
+  }
+
+  .brand-bar__logo {
+    width: 120px;
+  }
+
+  .section-padding {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
 /* ----- Site Header / Nav ----- */
 
 .site-header {
@@ -915,5 +969,68 @@ body {
 
   .footer__columns {
     gap: 48px;
+  }
+}
+
+/* ----- Interior Page ----- */
+
+.interior-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interior-hero__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.interior-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 28, 20, 0.35);
+}
+
+.interior-hero__title {
+  position: relative;
+  z-index: 1;
+  color: var(--marble);
+  font-size: 2.5rem;
+  text-align: center;
+  word-spacing: 0.5em;
+}
+
+.interior-body {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 24px 100px;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  color: var(--sediment);
+}
+
+.interior-body p + p {
+  margin-top: 1.5em;
+}
+
+@media (max-width: 767px) {
+  .interior-hero {
+    height: 45vh;
+    min-height: 280px;
+  }
+
+  .interior-hero__title {
+    font-size: 1.8rem;
+  }
+
+  .interior-body {
+    padding: 56px 24px 72px;
   }
 }
