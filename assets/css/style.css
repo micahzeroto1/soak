@@ -77,6 +77,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1374,5 +1375,73 @@ body {
     max-width: 400px;
     padding: 56px 24px 72px;
     gap: 32px;
+  }
+}
+
+/* ----- Mobile: Min 14px body copy & 44px touch targets ----- */
+
+@media (max-width: 767px) {
+  /* Minimum 14px (0.875rem) body copy on mobile */
+  .footer__signup-text,
+  .footer__col-heading,
+  .footer__col-link,
+  .explore__label,
+  .booking-cta__link,
+  .card__title,
+  .card__subtitle,
+  .menu__item-name,
+  .menu__item-desc,
+  .menu__item-price,
+  .tier__inclusion,
+  .tier__period,
+  .contact__label,
+  .contact__submit,
+  .contact__field label,
+  .product__name,
+  .product__price,
+  .booking-widget__placeholder {
+    font-size: 0.875rem;
+  }
+
+  /* 44px touch targets */
+  .nav__burger {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav__overlay-links {
+    gap: 4px;
+  }
+
+  .nav__overlay-link {
+    display: inline-block;
+    padding: 10px 16px;
+  }
+
+  .footer__col-links {
+    gap: 0;
+  }
+
+  .footer__col-link {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .booking-cta__link {
+    display: inline-block;
+    padding: 14px 16px;
+  }
+
+  .contact__submit {
+    min-height: 44px;
+  }
+
+  .contact__field input,
+  .contact__field textarea {
+    min-height: 44px;
+    padding: 12px 0;
   }
 }
