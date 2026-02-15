@@ -306,6 +306,33 @@ body {
   padding-top: 64px;
 }
 
+/* ----- Sticky Brand Bar ----- */
+
+.brand-bar-sticky {
+  position: sticky;
+  top: 64px;
+  z-index: 10;
+  background: var(--marble);
+  padding: 16px 48px;
+  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
+}
+
+.brand-bar-sticky__logo {
+  width: 140px;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .brand-bar-sticky {
+    top: 52px;
+    padding: 12px 24px;
+  }
+
+  .brand-bar-sticky__logo {
+    width: 120px;
+  }
+}
+
 /* ----- Hero fade-in ----- */
 
 @keyframes heroFadeIn {
@@ -334,31 +361,11 @@ body {
   object-fit: cover;
 }
 
-.hero__pattern {
-  background-color: var(--soaked-linen);
+.hero__mosaic {
+  background-image: url('../images/photography/Mosaic_Embossed.jpg');
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-  position: relative;
-}
-
-.hero__pattern::after {
-  content: '';
-  position: absolute;
-  bottom: -25px;
-  left: -25px;
-  width: 350px;
-  height: 350px;
-  background-image: url('../images/patterns/LockUpTwoAltnude.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.6;
-}
-
-.hero__logo {
-  position: absolute;
-  top: 32px;
-  left: 40px;
-  width: 200px;
-  z-index: 2;
 }
 
 .hero__drop-video {
@@ -382,33 +389,12 @@ body {
     min-height: 0;
   }
 
-  .hero__logo {
-    width: 140px;
-    top: 20px;
-    left: 24px;
-  }
-
-  .hero__pattern::after {
-    width: 220px;
-    height: 220px;
-    bottom: -15px;
-    left: -15px;
-  }
 }
 
 /* ----- Tagline ----- */
 
 .tagline {
   background: var(--marble);
-}
-
-.tagline__brand-bar {
-  padding: 20px 48px;
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
-}
-
-.tagline__brand-logo {
-  width: 140px;
 }
 
 .tagline__icons {
@@ -437,14 +423,6 @@ body {
 /* ----- Tagline mobile ----- */
 
 @media (max-width: 767px) {
-  .tagline__brand-bar {
-    padding: 16px 24px;
-  }
-
-  .tagline__brand-logo {
-    width: 120px;
-  }
-
   .tagline__icons {
     display: grid;
     grid-template-columns: 1fr 1fr;
