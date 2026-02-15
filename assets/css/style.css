@@ -173,7 +173,9 @@ ul, ol {
   left: 0;
   width: 100%;
   z-index: 100;
-  background: var(--marble);
+  background: rgba(255, 252, 248, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: box-shadow 0.3s ease;
 }
 
@@ -311,21 +313,24 @@ body {
 .brand-bar-sticky {
   position: sticky;
   top: 64px;
-  z-index: 10;
-  background: var(--marble);
-  padding: 16px 48px;
+  z-index: 100;
+  background: rgba(255, 252, 248, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 48px;
   border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .brand-bar-sticky__logo {
-  width: 140px;
+  width: 150px;
+  height: auto;
   display: block;
 }
 
 @media (max-width: 767px) {
   .brand-bar-sticky {
     top: 52px;
-    padding: 12px 24px;
+    padding: 10px 24px;
   }
 
   .brand-bar-sticky__logo {
@@ -366,17 +371,6 @@ body {
   background-size: cover;
   background-position: center;
   overflow: hidden;
-}
-
-.hero__drop-video {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: auto;
-  z-index: 2;
-  mix-blend-mode: multiply;
 }
 
 /* ----- Hero mobile ----- */
