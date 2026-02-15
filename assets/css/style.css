@@ -521,15 +521,15 @@ body {
 .cards__grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  max-width: 1100px;
+  gap: 48px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 70px 24px 80px;
 }
 
 .card {
-  width: 500px;
-  max-width: 500px;
+  width: 540px;
+  max-width: 540px;
   display: block;
 }
 
@@ -537,7 +537,7 @@ body {
   border: 1px solid var(--nude);
   padding: 10px;
   overflow: hidden;
-  height: 372px;
+  height: 500px;
 }
 
 .card__img {
