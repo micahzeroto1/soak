@@ -442,3 +442,94 @@ body {
     font-size: 1.75rem;
   }
 }
+
+/* ----- Cards ----- */
+
+.cards {
+  background: var(--marble);
+}
+
+.cards__brand-bar {
+  padding: 20px 48px;
+  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
+}
+
+.cards__brand-logo {
+  width: 140px;
+}
+
+.cards__grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 70px 24px 80px;
+}
+
+.card {
+  flex: 1;
+  max-width: 45%;
+  display: block;
+}
+
+.card__frame {
+  border: 1px solid var(--nude);
+  padding: 10px;
+}
+
+.card__img {
+  width: 100%;
+  display: block;
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 4px 0;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card__title {
+  font-size: 0.85rem;
+}
+
+.card__subtitle {
+  font-size: 0.85rem;
+}
+
+.card__icon {
+  width: 34px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* ----- Cards mobile ----- */
+
+@media (max-width: 767px) {
+  .cards__brand-bar {
+    padding: 16px 24px;
+  }
+
+  .cards__brand-logo {
+    width: 120px;
+  }
+
+  .cards__grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 48px 24px 64px;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
