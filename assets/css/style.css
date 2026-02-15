@@ -336,10 +336,10 @@ body {
   overflow: hidden;
 }
 
-.hero__pattern-img {
-  width: 80%;
+.hero__pattern-gif {
+  width: 40%;
   height: auto;
-  opacity: 0.8;
+  opacity: 0.15;
 }
 
 .hero__logo {
