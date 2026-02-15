@@ -329,20 +329,12 @@ body {
 }
 
 .hero__pattern {
-  background: var(--soaked-linen);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--soaked-linen);
+  background-image: url('../images/patterns/LockUpTwoAltnude.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
   overflow: hidden;
-}
-
-.hero__pattern-img {
-  display: block;
-  max-width: 200px;
-  max-height: 300px;
-  object-fit: contain;
-  margin: auto;
-  opacity: 0.5;
 }
 
 .hero__logo {
