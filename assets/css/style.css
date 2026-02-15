@@ -202,6 +202,8 @@ ul, ol {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  display: block;
+  line-height: 0;
 }
 
 .nav__dot-video {
