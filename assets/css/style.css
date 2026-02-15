@@ -206,11 +206,10 @@ ul, ol {
   line-height: 0;
 }
 
-.nav__dot-video {
+.nav__center-icon {
   display: block;
-  width: 80px;
+  width: 35px;
   height: auto;
-  mix-blend-mode: multiply;
 }
 
 .nav__burger {
@@ -465,7 +464,7 @@ body {
 }
 
 .booking-cta__crest {
-  width: 200px;
+  width: 280px;
   height: auto;
   mix-blend-mode: multiply;
 }
