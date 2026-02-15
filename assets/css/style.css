@@ -206,7 +206,7 @@ ul, ol {
 
 .nav__dot-video {
   display: block;
-  width: 22px;
+  width: 40px;
   height: auto;
 }
 
@@ -357,10 +357,10 @@ body {
 
 .hero__drop-video {
   position: absolute;
-  bottom: -25px;
+  bottom: -45px;
   left: 50%;
   transform: translateX(-50%);
-  width: 50px;
+  width: 90px;
   height: auto;
   z-index: 2;
 }
