@@ -176,6 +176,7 @@ ul, ol {
 }
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1017,6 +1018,7 @@ body {
 }
 
 .interior-hero--bg {
+  height: 65vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
