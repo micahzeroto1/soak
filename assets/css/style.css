@@ -116,7 +116,6 @@ ul, ol {
 
 .brand-bar {
   padding: 20px 48px;
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .brand-bar__logo {
@@ -124,9 +123,7 @@ ul, ol {
 }
 
 .section-divider {
-  border: none;
-  border-top: 1px solid rgba(207, 165, 130, 0.3);
-  margin: 0;
+  display: none;
 }
 
 .section-padding {
@@ -311,8 +308,6 @@ body {
 
 .brand-bar {
   padding: 10px 48px;
-  border-top: 1px solid rgba(207, 165, 130, 0.3);
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .brand-bar__logo {
@@ -437,7 +432,7 @@ body {
 .booking-cta {
   background: var(--marble);
   text-align: center;
-  padding: 90px 24px;
+  padding: 100px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -445,9 +440,8 @@ body {
 }
 
 .booking-cta__crest {
-  width: 280px;
+  width: 80px;
   height: auto;
-  mix-blend-mode: multiply;
 }
 
 .booking-cta__heading {
@@ -495,7 +489,7 @@ body {
   }
 
   .booking-cta__crest {
-    width: 150px;
+    width: 60px;
   }
 
   .booking-cta__heading {
@@ -511,7 +505,6 @@ body {
 
 .cards__brand-bar {
   padding: 20px 48px;
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .cards__brand-logo {
@@ -524,7 +517,7 @@ body {
   gap: 40px;
   max-width: 900px;
   margin: 0 auto;
-  padding: 70px 24px 80px;
+  padding: 100px 24px;
 }
 
 .card {
@@ -610,7 +603,6 @@ body {
 
 .explore__brand-bar {
   padding: 20px 48px;
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .explore__brand-logo {
@@ -706,7 +698,6 @@ body {
 
 .mosaic__brand-bar {
   padding: 20px 48px;
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .mosaic__brand-logo {
@@ -810,7 +801,6 @@ body {
 
 .footer__brand-bar {
   padding: 20px 48px;
-  border-bottom: 1px solid rgba(207, 165, 130, 0.3);
 }
 
 .footer__brand-logo {
@@ -818,7 +808,7 @@ body {
 }
 
 .footer__inner {
-  padding: 110px 48px 60px;
+  padding: 100px 48px 60px;
 }
 
 /* Editorial photos */
@@ -868,7 +858,7 @@ body {
 }
 
 .footer__crest {
-  width: 50px;
+  width: 280px;
   height: auto;
 }
 
