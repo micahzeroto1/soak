@@ -336,11 +336,21 @@ body {
 
 .hero__pattern {
   background-color: var(--soaked-linen);
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__pattern::after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+  width: 350px;
+  height: 350px;
   background-image: url('../images/patterns/LockUpTwoAltnude.svg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150px;
-  overflow: hidden;
+  background-size: contain;
+  opacity: 0.6;
 }
 
 .hero__logo {
@@ -376,6 +386,13 @@ body {
     width: 140px;
     top: 20px;
     left: 24px;
+  }
+
+  .hero__pattern::after {
+    width: 220px;
+    height: 220px;
+    bottom: -15px;
+    left: -15px;
   }
 }
 
